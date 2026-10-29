@@ -1,14 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this software or hardware architecture, please cite it as below."
+message: "If you use this software or research, please cite it as below."
 authors:
   - family-names: "Rasmussen"
     given-names: "Jacob James"
-    orcid: "0009-0009-7084-6523"
-    affiliation: "Chippewa Valley Technical College, Shell Lake, WI, USA"
-    email: "jrasmussen38@student.cvtc.edu"
-title: "Project AMBROSIUM v10.0: Monolithic Cyber-Physical Microfluidic Assembly via 10 MHz Nanopore Metrology, Active Electrodialysis Debye Expansion, and Anisotropic RF Thermal Curing"
-version: "10.0.0"
-date-released: "2026-10-27"
-journal: "Lab on a Chip"
-publisher: "Royal Society of Chemistry"
-license: "MIT"
+    orcid: "https://orcid.org/0009-0009-7084-6523"
+title: "microfluidic-cps-fabrication"
+version: "1.0.0"
+date-released: 2026-10-29
