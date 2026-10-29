@@ -1,0 +1,139 @@
+{
+  "project": "Project AMBROSIUM v10.0",
+  "version": "10.0.0",
+  "journal_target": "Lab on a Chip",
+  "publisher": "Royal Society of Chemistry",
+  "publishing_model": "Traditional Subscription (No-Fee)",
+  "author": {
+    "name": "Jacob (Jake) James Rasmussen",
+    "affiliation": "CVTC STEM Division, Chippewa Valley Technical College, Shell Lake, WI, USA",
+    "orcid": "0009-0009-7084-6523"
+  },
+  "subsystems": [
+    {
+      "subsystem": "FPGA Digital Core",
+      "components": [
+        {
+          "parameter": "Hardware Platform",
+          "value": "AMD/Xilinx Artix-7 (XC7A100T)",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Control Loop Update Interval",
+          "value": "10.0 ms",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Worst-Case Execution Time",
+          "value": "WCET = 1.42 ms",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Verilog FSM Biophysical Guard",
+          "value": "yprev < 16'sd2000",
+          "status": "Verified"
+        }
+      ]
+    },
+    {
+      "subsystem": "Nanopore Metrology",
+      "components": [
+        {
+          "parameter": "Sampling Bus / Resolution",
+          "value": "10 MHz, 14-bit Parallel ADC",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Circular FIFO Buffer Depth",
+          "value": "1024 words",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Solid-State Nanopore Size",
+          "value": "10 nm Si3N4 pores",
+          "status": "Verified"
+        }
+      ]
+    },
+    {
+      "subsystem": "Active Electrodialysis",
+      "components": [
+        {
+          "parameter": "Debye Screening Length Expansion",
+          "value": "0.80 nm -> 4.98 nm",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Electrolyte Concentration Drop",
+          "value": "150 mM -> 3.86 mM NaCl",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Gate Voltage Safety Ceiling",
+          "value": "Vgate < 1.23 V (Strict Limit)",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Surfactant Additive",
+          "value": "0.05% v/v Tween-20 / Triton X",
+          "status": "Verified"
+        }
+      ]
+    },
+    {
+      "subsystem": "Acoustic MEMS Array",
+      "components": [
+        {
+          "parameter": "SFAT Transducer Configuration",
+          "value": "10,000 channels @ 100 kHz",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Element Pitch & Isolation",
+          "value": "25 um pitch / >= -28.3 dB",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Taylor Number (Laminar Flow)",
+          "value": "Ta = 0.02 << 41.2",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Tsai-Wu Failure Index",
+          "value": "FI = 0.92 <= 1.0 at 2.5 bar",
+          "status": "Verified"
+        }
+      ]
+    },
+    {
+      "subsystem": "RF Thermal Curing & PDE Solver",
+      "components": [
+        {
+          "parameter": "Waveguide Cavity & Frequency",
+          "value": "WR-340 / 2.45 GHz",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Volumetric Curing Envelope",
+          "value": "65-72 deg C in tau = 0.85 s",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Advective Quenching Inflow",
+          "value": "25.0 deg C inflow stream",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Silica Aerogel Insulation",
+          "value": "k = 0.015 W/(m*K)",
+          "status": "Verified"
+        },
+        {
+          "parameter": "Courant Stability Ratio",
+          "value": "r = 0.0572 << 0.50 (dt = 100 ns)",
+          "status": "Verified"
+        }
+      ]
+    }
+  ]
+}
