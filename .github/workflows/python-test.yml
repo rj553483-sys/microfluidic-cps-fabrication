@@ -13,7 +13,7 @@ jobs:
         python-version: '3.12'
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run verification
       run: |
         python src/cfl_proof.py
